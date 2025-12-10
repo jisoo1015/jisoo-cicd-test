@@ -23,7 +23,7 @@ pipeline {
                 echo "IMAGE TAG: $IMAGE_TAG"
 
                 # 2. app 디렉토리로 이동해서 Docker 이미지 빌드
-                cd app
+   
                 docker build -t $ECR_URI:$IMAGE_TAG .
 
                 # 3. ECR 로그인
